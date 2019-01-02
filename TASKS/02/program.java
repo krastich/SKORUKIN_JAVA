@@ -1,18 +1,19 @@
 class Program {
 	public static void main(String[] args) {
-		int sum = 15867;
-		int f = 5000;
-		int t = 1000;
-		int x = 500;
-		int y = 100;
-		int z = 50;
-		int r = 10;
-		int k = 5;
-		int l = 2;
-		int g = 1;
-		int a = x / y;
-		int b = x % y;
-		System.out.println(a);
-		System.out.println(b);
+		int number = 189;
+        int a = number % 2;
+        int one = number / 2;
+        int b = one % 2;
+        int two = one / 2;
+        int c = two % 2;
+        int three = two / 2;
+        int d = three % 2;  
+        int four = three / 2;
+        int e = four % 2;
+        int five = four / 2;
+        int f = five % 2;
+        int six = five / 2;
+        int g = six % 2;      
+    System.out.println(g + "" + f + "" + e + "" + d + "" + c + "" + b + "" + a);
 	}
 }
