@@ -1,0 +1,12 @@
+public class task04 {
+    public static void main(String[] args) {
+        int number;
+        int sumAllNumber=0;
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 1; i < 1000; i++) {
+            number = scanner.nextInt();
+            sumAllNumber += number;
+        }
+        System.out.print(500500 - sumAllNumber);
+    }
+}

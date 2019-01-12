@@ -13,7 +13,9 @@ class Program {
         int five = four / 2;
         int f = five % 2;
         int six = five / 2;
-        int g = six % 2;      
-    System.out.println(g + "" + f + "" + e + "" + d + "" + c + "" + b + "" + a);
+        int g = six % 2;
+        int seven = six / 2;
+        int h = seven % 2;      
+    System.out.println(h + "" + g + "" + f + "" + e + "" + d + "" + c + "" + b + "" + a);
 	}
 }
