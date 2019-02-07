@@ -6,27 +6,19 @@ public class Main {
             int l = n/2;
             int matrix[][] = new int[n][n];
             int number = 1;
-         for (int i = 0; i < n; i++) {
-             for (int j = 0; j < matrix[i].length; j++) {
+         for (int i = 0; i < l; i++) {
+             for (int j = 0; j < n; j++) {
                  matrix[i][j] = number++;
-                 System.out.print(matrix[i][j] + " ");
-                 System.out.println();
              }
 
-             for (int j = 1; j < matrix[i].length-1; j++) {
+             for (int j = 1; j < matrix[i].length - 1; j++) {
                  matrix[i + j][matrix.length - 1 - i] = number++;
-                 System.out.print(matrix[i][j] + " ");
-                 System.out.println();
              }
              for (int j = n - 2; j > -1; j--) {
                  matrix[matrix.length - 1 - i][i + j] = number++;
-                 System.out.print(matrix[i][j] + " ");
-                 System.out.println();
              }
              for (int j = n - 2; j > 0; j--) {
                  matrix[i + j][i] = number++;
-                 System.out.print(matrix[i][j] + " ");
-                 System.out.println();
              }
              n -= 2;
          }

@@ -1,5 +1,9 @@
 package ru.itpark;
 
-public class RemoteController {
-    private int button;
-}
+    class RemoteController {
+        private TV tv;
+
+        public void pressButton(int buttonNumber) {
+            tv.showChannel(buttonNumber);
+        }
+    }

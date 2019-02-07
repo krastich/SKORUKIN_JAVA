@@ -1,11 +1,8 @@
 package ru.itpark;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Task11 {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите длину массива: ");
@@ -14,7 +11,6 @@ public class Task11 {
         int left = 0;
         int right = array.length;
         int middle = left + (right - left) / 2;
-        int desiredNumber;
         System.out.println("Введите элементы массива:");
         for (int i = 0; i < size; i++) {
             array[i] = input.nextInt();
@@ -23,6 +19,7 @@ public class Task11 {
         for (int i = 0; i < size; i++) {
             System.out.print(" " + array[i]);
         }
+        System.out.println();
         System.out.print("Отсортированный массив:");
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -36,8 +33,9 @@ public class Task11 {
         for (int i = 0; i < array.length; i++) {
             System.out.print(" " + array[i]);
         }
-        System.out.print("Найти число: ");
-        {
+        System.out.println();
+        System.out.println("Найти число: ");        {
+            int desiredNumber = input.nextInt();
             while (desiredNumber != array[middle]) {
                 if (desiredNumber > array[middle]) {
                     left = middle;
@@ -47,10 +45,7 @@ public class Task11 {
                     middle = left + (right - left) / 2;
                 }
             }
-
-            System.out.println("Порядковый номер:" + array[middle] + "в отсортированном массиве " + middle);
+            System.out.println("Порядковый номер: " + array[middle]);
+            System.out.println("В отсортированном массиве " + middle);
         }
     }
-}
-
-
